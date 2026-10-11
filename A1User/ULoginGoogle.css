@@ -25,12 +25,12 @@
   border-color: #444444;
 }
 .auth-google-spanner{
+  z-index: 10;
   position:absolute; 
   width:100%;
   height:100%;
   top:0;
   left: 0;
-  z-index: var(--z-a);
 }
 #auth-google-image{
   width: 38px;

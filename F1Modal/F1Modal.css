@@ -5,6 +5,7 @@
 }
 
 .modal_hold {
+  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,7 +16,6 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: var(--z-a);
 }
 
 .onModal {

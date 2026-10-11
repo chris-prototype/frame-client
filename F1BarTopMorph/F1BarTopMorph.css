@@ -1,9 +1,9 @@
 .bar_top_hold_hold{
+  z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #bbb;
-  z-index: var(--z-aa);
   position: fixed;
   
 

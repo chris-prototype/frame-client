@@ -1,5 +1,5 @@
 .left-bar {
-  z-index: var(--z-a);
+  z-index: 10;
   position: fixed;
   top: var(--z-apex-height);
   left: 0; 
