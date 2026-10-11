@@ -1,5 +1,6 @@
 {
   "search.exclude": {
-    "**/bundle.js": true
+    "**/_vite-out": true,
+    "**/_vite-public": true
   }
 }
