@@ -1,6 +1,6 @@
 # Design Principles
 
-- Aim for minimal lines of code.
+- Aim for minimal lines of code with out sacrificing readability.
 - Aim to use as few external libraries as possible.
 - Do not code defensively - assume required page elements exist.
 

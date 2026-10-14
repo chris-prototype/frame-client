@@ -29,11 +29,9 @@ export default function F1 () {
       {/* Lowest visual priority by DOM order */}      
       <F1App />
 
-
       <F1BarTopMorph />
       <F1BarTop />
       <F1MenuRight />
-
 
       <F1BarBottom />      
       <F1Modal />
