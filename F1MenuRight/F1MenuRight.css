@@ -1,6 +1,12 @@
+.menu_right_outer {
+}
+
 #menu_top {
-  position: relative;
+  position: fixed;
   font-size: var(--height-logo); 
   margin-left: var(--left);
   cursor: pointer; 
+  top: 18px;
+  right: 50px;
+  z-index: 10;
 }

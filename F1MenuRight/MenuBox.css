@@ -1,6 +1,7 @@
 .menu_box {
+  z-index: 5;
   display: flex;
-  position: absolute;
+  position: fixed;
   top: -72px;
   transform: translateY(0);
   transition: transform 500ms cubic-bezier(0.0, 0.0, 0.2, 1);
@@ -9,7 +10,6 @@
   background: var(--opa);
   padding: 5px;
   border-radius: 5px;
-  z-index: -100;
 }
 .is_visible_box {
   transform: translateY(136px);
