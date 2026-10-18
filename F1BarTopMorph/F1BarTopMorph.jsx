@@ -9,7 +9,7 @@ export default function F1BarTopMorph () {
   
   return (
     <>
-      <div className={`bar_top_hold_hold ${isVisible ? 'is-visible' : ''}`}>
+      <div className={`bar_top_dynamic_hold ${isVisible ? 'is-visible' : ''}`}>
         <C1Search />
       </div>
     </>
