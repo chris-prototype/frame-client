@@ -15,12 +15,12 @@ export default function StationWeather ({ lat, lon }) {
 
   return (
     <>
+      <p class='text-1'>Temperature: {Math.round(weatherData.main.temp)}°</p>
       <img
         id='image_weather'
         src={`https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`}
         alt='Weather Icon'
       />
-      <p id='box_weather_inner'>{Math.round(weatherData.main.temp)}°</p>
     </>
   )
 }

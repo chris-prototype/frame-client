@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import Helper from '../F1All/F1Helper.js'
 
 export default function A1Station ({ lat, lon }) {
-  // console.logD('DEBUG: L4 : F1-Page-Station-Air ')
 
   const [airData, setAirData] = useState(null)
   const baseURL = Helper.getBaseURL()
@@ -10,11 +9,12 @@ export default function A1Station ({ lat, lon }) {
   useEffect(() => {
     const url = `${baseURL}/api_openweather/air?lat=${lat}&lon=${lon}`
     Helper.fetchJSON(url, null, (json) => {
+      console.log('air', json);
       setAirData(json)
     })
   }, [lat, lon])
 
   return airData?.list && (
-    <p id='box_air_inner'>Air Quality: {airData.list[0].main.aqi}</p>
+    <p class='text-1'>Air Quality: {airData.list[0].main.aqi}</p>
   )
 };

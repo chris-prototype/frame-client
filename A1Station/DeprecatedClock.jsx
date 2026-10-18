@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 
 export default function StationClock () {
-  // console.logD('DEBUG: L3 : F1-Page-Station-Clock ')
   const [time, setTime] = useState(new Date())
 
   useEffect(() => {
