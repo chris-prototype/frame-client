@@ -5,21 +5,16 @@
   align-items: center;
   color: #bbb;
   position: fixed;
-  
-
+  left: 50%;
   top: -64px;
-  transform: translateY(0); /* Explicit default state */
+  width: fit-content;
+  max-width: calc(100vw - 32px);
+  transform: translateX(-50%) translateY(0);
   transition: transform 500ms cubic-bezier(0.0, 0.0, 0.2, 1);  
-
-  left: 0;
-  height: 48px;
-  /* width: 100%; */
   box-sizing: border-box;
 }
 
 .is-visible{
-
-  transform: translateY(128px); /* Slides it down to your 64px final position */
+  transform: translateX(-50%) translateY(128px);
   transition: transform 500ms cubic-bezier(0.0, 0.0, 0.2, 1);
-
 }
