@@ -1,4 +1,4 @@
-export default function A1Station () {
+export default function A1StationHP () {
   return (
       <div class='station'>
         <p class='heading-1'>
