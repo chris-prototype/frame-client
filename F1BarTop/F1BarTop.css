@@ -1,7 +1,7 @@
 .apex_hold{
   z-index: 10;
   color: var(--color-black-32);
-  background: var(--opa);
+  background: white;
   position: fixed;
   top: 0;
   left: 0;

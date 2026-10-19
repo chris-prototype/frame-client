@@ -6,15 +6,15 @@
   color: #bbb;
   position: fixed;
   left: 50%;
-  top: -64px;
+  top: 30px;
   width: fit-content;
   max-width: calc(100vw - 32px);
   transform: translateX(-50%) translateY(0);
-  transition: transform 500ms cubic-bezier(0.0, 0.0, 0.2, 1);  
+  transition: transform 300ms cubic-bezier(0.0, 0.0, 0.2, 1);  
   box-sizing: border-box;
 }
 
 .is-visible{
-  transform: translateX(-50%) translateY(128px);
-  transition: transform 500ms cubic-bezier(0.0, 0.0, 0.2, 1);
+  transform: translateX(-50%) translateY(40px);
+  transition: transform 300ms cubic-bezier(0.0, 0.0, 0.2, 1);
 }
