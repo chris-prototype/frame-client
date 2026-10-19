@@ -11,10 +11,10 @@ export default function C1MenuRight () {
   const menuClicked = () => dispatch(toggleMenuPage())
   return (
 
-    <div class="menu_right_hold">
+    <>
       <SVGMenu onClick={menuClicked} id='menu_top' />
       <MenuBox />
-    </div>
+    </>
 
   )
 }
