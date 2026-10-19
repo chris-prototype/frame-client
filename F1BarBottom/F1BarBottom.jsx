@@ -9,7 +9,7 @@ export default function F1BarBottom () {
   const style = (page === 'User') ? 'footer_show ' : 'footer_hide'
 
   return (
-    <div className={`footer_outer ${style}`}>
+    <div className={`footer_hold ${style}`}>
       <a className='footer_item' target='_blank' href={config.github} rel='noreferrer'>github</a>
     </div>
   )

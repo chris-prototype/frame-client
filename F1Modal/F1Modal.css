@@ -1,9 +1,3 @@
-/* appears on the body tag to prevent scrolling while the modal is active
-*/
-.modal-on {
-  overflow: hidden;
-}
-
 .modal_hold {
   z-index: 15;
   display: flex;
@@ -18,9 +12,15 @@
   left: 0px;
 }
 
-.onModal {
+/* appears on the body tag to prevent scrolling while the modal is active
+*/
+.modal-on {
+  overflow: hidden;
 }
 
-.offModal {
+.modal_show {
+}
+
+.modal_hide {
   display: none;
 }

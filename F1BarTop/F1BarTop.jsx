@@ -9,8 +9,8 @@ export default function F1BarTop () {
   console.logD('DEBUG: L2 : F1-BarTop ', '#4285f4')
   return (
     <>
-      <div className='apex_hold_hold'>
-        <div className='apex_hold'>
+      <div className='apex_hold'>
+        <div className='apex_outer'>
           <F1BTLeft />
           <F1BTCenter />
           <F1BTRight />

@@ -16,7 +16,7 @@ export default function F1Modal () {
   }
   on ? document.body.classList.add('modal-on') : document.body.classList.remove('modal-on')
   return (
-    <div onClick={offModalClick} className={on ? 'modal_hold onModal' : 'modal_hold offModal'}>
+    <div onClick={offModalClick} className={on ? 'modal_hold modal_show' : 'modal_hold modal_hide'}>
       <M1 />
     </div>
   )
