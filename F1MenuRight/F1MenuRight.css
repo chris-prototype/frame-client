@@ -2,11 +2,8 @@
 }
 
 #menu_top {
-  position: fixed;
   font-size: var(--height-logo); 
   margin-left: var(--left);
   cursor: pointer; 
-  top: 18px;
-  right: 50px;
   z-index: 10;
 }

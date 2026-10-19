@@ -31,7 +31,7 @@ export default function F1 () {
 
       <F1BarTopMorph />
       <F1BarTop />
-      <F1MenuRight />
+      {/* <F1MenuRight /> */}
 
       <F1BarBottom />      
       <F1Modal />
