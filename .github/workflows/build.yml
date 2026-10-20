@@ -48,7 +48,7 @@ jobs:
           # the source
           publish_dir: ./_vite-out
           # the destination
-          external_repository: livestrongai/livestrongai.github.io
+          external_repository: chris-prototype/chris-prototype.github.io
           publish_branch: main
 
       # step 6
@@ -57,6 +57,6 @@ jobs:
         with:
           personal_token: ${{ secrets.API_TOKEN_GITHUB }}
           publish_dir: ./_vite-out
-          external_repository: livestrongai/frame-server
+          external_repository: chris-prototype/frame-server
           publish_branch: main
           destination_dir: dist
