@@ -9,12 +9,12 @@ const live = {
   fallback: `${imagePath}medical-symbol.jpeg`,
 
   // general
-  title: 'Livelong',
+  title: 'L',
   title_on: true,
   start_page: 'Articles',
   email: 'chris@livelong.ai',
   subject: 'inquiry',
-  github: 'https://github.com/caaker'
+  github: 'https://github.com/chris-prototype'
 }
 
 export default live
