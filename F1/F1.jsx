@@ -3,7 +3,7 @@ import '../F1AllCSS/global-resets.css'
 import '../F1AllCSS/global-layouts.css'
 import '../F1AllCSS/global-themes.css'
 
-// non-react files
+// non-react files - consider moving to F1Boot/useEffect and render a null object below
 import '../F1All/F1Custom.js'
 import '../F1All/F1ServerPing.js'
 import '../F1All/F1ServerData.js'
@@ -17,8 +17,7 @@ import F1BarBottom from '../F1BarBottom/F1BarBottom.jsx'
 import F1App from '../F1App/F1App.jsx'
 import F1Modal from '../F1Modal/F1Modal.jsx'
 
-// future
-// import F1BarLeft from '../F1BarLeft/F1BarLeft.jsx'
+// future - import F1BarLeft from '../F1BarLeft/F1BarLeft.jsx'
 export default function F1 () {
   console.logD('DEBUG: L1 : F1', '#4285f4')
   return (
