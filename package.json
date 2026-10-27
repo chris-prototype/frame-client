@@ -12,9 +12,6 @@
     "env": [
       "browser"
     ],
-    "rules": {
-      "camelcase": "off"
-    },
     "ignore": [
       "**/bundle.js",
       "dist/",
@@ -31,7 +28,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "latest",
-    "standard": "^17.1.2",
+    "standard": "latest",
     "vite": "latest"
   }
 }
