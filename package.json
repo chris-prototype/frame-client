@@ -1,9 +1,6 @@
 {
   "comments": "npm automatically sets 'latest' when author publishes",
   "type": "module",
-  "engines": {
-    "node": "24.x"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build"
@@ -13,10 +10,8 @@
       "browser"
     ],
     "ignore": [
-      "**/bundle.js",
-      "dist/",
-      "build/",
-      "public/js/"
+      "_vite-out/",
+      "_vite-public/"
     ]
   },
   "dependencies": {
