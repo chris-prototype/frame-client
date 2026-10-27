@@ -6,7 +6,7 @@ export default function StationWeather ({ lat, lon }) {
   const baseURL = Helper.getBaseURL()
 
   useEffect(() => {
-    Helper.fetchJSON(`${baseURL}/api_openweather/weather?lat=${lat}&lon=${lon}`, null, (json) => {
+    Helper.fetchJSON(`${baseURL}/openweather/weather?lat=${lat}&lon=${lon}`, null, (json) => {
       setWeatherData(json)
     })
   }, [lat, lon])
