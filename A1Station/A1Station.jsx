@@ -7,9 +7,9 @@ export default function A1Station () {
   console.logD('DEBUG: L3 : F1-App-Station ')
   return (
     <div className='page_generic'>
-      <A1StationEnvironment />
-      <A1StationHP />
       <A1StationHuman />
+      <A1StationHP />
+      <A1StationEnvironment />
     </div>
   )
 }
