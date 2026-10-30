@@ -15,7 +15,7 @@ export default function F1App () {
       <div className='page_container'>
         {(page === 'User') && <A1User />}
         {(page === 'Articles') && <A1Article />}
-        {(page === 'Station') && <A1Station />}
+        {(page === 'Health') && <A1Station />}
         {(page === 'Finance') && <A1Finance />}
         {(page === 'Domains') && <A1Domains />}
       </div>
