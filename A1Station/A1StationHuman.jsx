@@ -4,7 +4,9 @@ export default function A1StationHuman () {
         <p class='heading-1'>
           HUMAN
         </p>
-        <p class='text-1'>Temperature: 98°</p>
+        <p class='text-1'>Temperature: 98°F</p>
+        <p class='text-1'>Heart Rate: 55bpm</p>
+        <p class='text-1'>SpO2: 99%</p>
       </div>
   )
 }
