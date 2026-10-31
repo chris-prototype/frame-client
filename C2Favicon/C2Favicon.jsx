@@ -11,8 +11,11 @@ export default function C2Favicon (props) {
   return (
     <img
       className='article_icons_right'
-      src={'https://www.google.com/s2/favicons?domain=' + props.domain + '&sz=32'}
+      src={`https://icons.duckduckgo.com/ip3/${props.domain}.ico`}
       onError={errorHandler}
     />
   )
 };
+
+// trying duck duck go instead
+// src={'https://www.google.com/s2/favicons?domain=' + props.domain + '&sz=32'}
