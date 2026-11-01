@@ -1,13 +1,13 @@
 .apex_hold{
   z-index: 10;
   color: var(--color-black-32);
-  background: white;
+  background: var(--bg-white-100);
   position: fixed;
   top: 0;
   left: 0;
   transition: background 2s;
   box-shadow: var(--shadow-sm);  
-  height: var(--z-apex-height);
+  height: var(--apex-height);
   width: 100%;
   border-top: 2px solid #000;
   box-sizing: border-box;

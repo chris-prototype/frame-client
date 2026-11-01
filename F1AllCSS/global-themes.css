@@ -1,15 +1,16 @@
-/* filter or remove */
+/* dark mode / light mode */
 :root {
-  --z-apex-height: 64px;
-  --height-logo: 32px;
-  --left: 20px;
+  --light-background: #FAF8F5;
+  --light-text: #1C1917;
+  --dark-background:  #121110;
+  --dark-text:  #E6DFD5;
 }
 
-/* z-indices */
+/* filter or remove */
 :root {
-  --z-a: 10;
-  --z-b: 20;
-  --z-c: 30;
+  --apex-height: 64px;
+  --height-logo: 32px;
+  --left: 20px;
 }
 
 /* colors */
@@ -17,9 +18,6 @@
   --color-blue: #4285f4;
   --color-green: #34a853;
   --color-red: #ea4335;
-  --color-grey: #444444;
-
-  /* strategy for updating all primary colors */
   --color-primary: var(--color-green);
 }
 
@@ -38,26 +36,17 @@
   --bg-white-10:  rgb(255 255 255 / 0.10);
 }
 
-/* opacities */
-
+/* opacities 
+*/
 :root {
   --opa: rgb(255 255 255 / 0.90);
 }
 
-/* shadows, cast south, elevations  */
+/* shadows, cast south, elevations  
+*/
 :root {
   --shadow-sm: 
     0 1px 2px rgb(0 0 0 / 0.1), 
     0 2px 4px rgb(0 0 0 / 0.06), 
     0 4px 8px rgb(0 0 0 / 0.04);
-
-  --shadow-md: 
-    0 4px 6px rgb(0 0 0 / 0.12), 
-    0 10px 15px rgb(0 0 0 / 0.1), 
-    0 20px 25px rgb(0 0 0 / 0.05);
-
-  --shadow-lg: 
-    0 10px 20px rgb(0 0 0 / 0.15), 
-    0 20px 40px rgb(0 0 0 / 0.1), 
-    0 30px 60px rgb(0 0 0 / 0.05);
 }

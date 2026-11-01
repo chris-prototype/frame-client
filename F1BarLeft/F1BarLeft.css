@@ -1,10 +1,10 @@
 .left-bar {
   position: fixed;
-  top: var(--z-apex-height);
+  top: var(--apex-height);
   left: 0; 
   transform: translateX(-100%);
   width: 50px;
-  height: calc(100vh - var(--z-apex-height));
+  height: calc(100vh - var(--apex-height));
   background: var(--opa);
   box-shadow: var(--shadow-sm);   
   display: flex;

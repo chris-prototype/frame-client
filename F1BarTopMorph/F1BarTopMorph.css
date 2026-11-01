@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #bbb;
+  color:var(--color-black-128);
   position: fixed;
   left: 50%;
   top: 30px;
