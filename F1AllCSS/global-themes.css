@@ -1,6 +1,18 @@
 /* dark mode / light mode */
-:root {
+/* AI sugggesed but looks dull
   --light-background: #FAF8F5;
+*/
+
+body {
+  background-color: var(--light-background);
+  background-image:url('/images/grid-1.svg')
+}
+:root {
+  --bg-color: var(--light-background);
+}
+
+:root {
+  --light-background: #FFFFFF;
   --light-text: #1C1917;
   --dark-background:  #121110;
   --dark-text:  #E6DFD5;

@@ -57,7 +57,7 @@ __article-back {
   padding: 10px;
   box-sizing: border-box;
   box-shadow: var(--shadow-sm);  
-  background: var(--opa);
+  background: var(--bg-color);
   transition: background 2s;
   border-radius: 4px;
 }

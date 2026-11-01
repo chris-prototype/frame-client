@@ -17,8 +17,9 @@ const Custom = {
     link.href = config.favicon + '?favicon_dynamic=true'
     document.head.appendChild(link)
   },
+  // moving to CSS
   setBackground () {
-    document.body.style.backgroundImage = `url(${config.background})`
+    // document.body.style.backgroundImage = `url(${config.background})`
   },
   setTitle () {
     document.title = config.title
