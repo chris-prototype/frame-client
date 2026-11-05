@@ -10,7 +10,7 @@ import './ArticleBar.css'
 
 export default function ArticleBar ({ article }) {
   const email = useSelector((state) => state.User.current.email)
-  const admin = (email === 'caaker.0@gmail.com')
+  const admin = (email === 'chris.temp.level.0@gmail.com')
 
   return (
     <div className='article_bar'>
