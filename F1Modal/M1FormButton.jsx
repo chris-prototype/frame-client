@@ -5,8 +5,7 @@ import { testArticleForm } from '../_redux/a-article-form'
 // Consider React.memo() to stop re-render
 export default function M1FormButton ({ config }) {
   const dispatch = useDispatch()
-  const email = useSelector((state) => state.User.current.email)
-  const admin = (email === 'caaker.0@gmail.com')
+  const admin = useSelector((state) => state.User.isAdmin)
   const handleTestClick = () => {
     dispatch(testArticleForm())
   }

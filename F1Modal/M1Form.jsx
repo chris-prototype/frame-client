@@ -12,15 +12,21 @@ export default function M1Form () {
   const dispatch = useDispatch()
   const articleForm = useSelector((state) => state.ArticleForm) || {}
   const config = useSelector((state) => state.Modal.config)
+  const admin = useSelector((state) => state.User.isAdmin)
 
   function onSubmit (event) {
     event.preventDefault()
+    if (!admin) return alert('You must be logged in as an administrator for this operation')
     if (!articleForm.valid) return alert('Form has errors. Please correct.')
     dispatch(clearArticleForm())
     dispatch(toggleModalOff())
     const payload = makeObject(articleForm)
+    
+    // edit article
     if (config) {
       Submit.put(payload, dispatch)
+
+    // create article
     } else {
       Submit.post(payload, dispatch)
       LSaddArticle(payload)
