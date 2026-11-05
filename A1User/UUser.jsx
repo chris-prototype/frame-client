@@ -3,7 +3,7 @@ import Helper from '../F1All/F1Helper.js'
 import { useSelector } from 'react-redux'
 
 export default function UUser () {
-  const User = useSelector(state => state.User.current)
+  const User = useSelector(state => state.User)
 
   const baseURL = Helper.getBaseURL()
   const URL = window.location.origin + window.location.pathname

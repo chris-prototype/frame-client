@@ -6,18 +6,26 @@ const ADMIN_EMAIL = 'chris.temp.level.0@gmail.com'
 const userSlice = createSlice({
   name: 'user',
   initialState: { 
+    name: null,
     email: null,
-    isAdmin: false 
+    isAdmin: false,
+    pic_url: null
   },
-
+  
   // payload is the default property on the action
+
   reducers: {
+
+    // the server returns false or a user object if someone is logged in
     initializeUser: (state, action) => {
-      const email = action.payload
-      state.email = email
-      state.isAdmin = (email === ADMIN_EMAIL)
+      const user = action.payload || {}
+      state.name = user.name
+      state.email = user.email
+      state.isAdmin = (user.email === ADMIN_EMAIL)
+      state.pic_url = user.pic_url
     }
   }
+
 })
 
 // use named exports
