@@ -15,9 +15,14 @@ class Helper {
     }
   }
 
-  static async fetchJSON (url, options = { credentials: 'include' }, onsuccess = Helper.onSuccessDefault, onfailure = Helper.onFailureDefault) {
+  static async fetchJSON (url, options = {}, onsuccess = Helper.onSuccessDefault, onfailure = Helper.onFailureDefault) {
+    const finalOptions = {
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'include',
+      ...options
+    }
     try {
-      const response = await fetch(url, options)
+      const response = await fetch(url, finalOptions)
       if (!response.ok) throw new Error(`HTTP error with status: ${response.status}`)
       const json = await response.json()
       onsuccess(json)

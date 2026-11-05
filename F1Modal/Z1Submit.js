@@ -5,7 +5,6 @@ const BASE = Helper.getBaseURL()
 
 exp.post = function (article, dispatch) {
   const options = {
-    headers: { 'Content-Type': 'application/json' },
     method: 'POST',
     body: JSON.stringify(article)
   }
@@ -16,7 +15,6 @@ exp.post = function (article, dispatch) {
 
 exp.put = function (article, dispatch) {
   const options = {
-    headers: { 'Content-Type': 'application/json' },
     method: 'PUT',
     body: JSON.stringify(article)
   }
