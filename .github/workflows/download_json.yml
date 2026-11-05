@@ -1,0 +1,35 @@
+name: download_json
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs at 02:22 UTC every Sunday
+    - cron: '22 2 * * 0'
+
+permissions:
+  contents: write
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Clone repository into the runner
+        uses: actions/checkout@v6
+
+      - name: Install Node 24
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Run download_json.js
+        run: node download_json.js
+
+      # echo "..." prevents fail on no changes to commit
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions-bot"
+          git config --global user.email "github-actions-bot@users.noreply.github.com"
+          git add _public-vite/
+          git commit -m "github actions update" || echo "No changes to commit"
+          git push origin main
