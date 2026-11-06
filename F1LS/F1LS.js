@@ -1,3 +1,5 @@
+// this file is for possible future use
+
 export const LS = {
   get (key) {
     try {

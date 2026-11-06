@@ -9,6 +9,8 @@ exp.post = function (article, dispatch) {
     body: JSON.stringify(article)
   }
   Helper.fetchJSON(`${BASE}/articles/add`, options, (response) => {
+    console.log('article added' )
+    console.log(response)
     dispatch(addArticle(response))
   })
 }

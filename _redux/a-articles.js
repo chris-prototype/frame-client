@@ -4,9 +4,13 @@ export const ArticlesSlice = createSlice({
   initialState: { articles: false },
   reducers: {
     initializeArticles: (state, action) => { state.articles = action.payload },
-    addArticle: (state, action) => { state.articles.unshift(action.payload) },
+    addArticle: (state, action) => {
+      console.log(action.payload) 
+      state.articles.unshift(action.payload) 
+    },
     updateArticle: (state, action) => {
       const { index, articleNew } = action.payload
+      console.log(articleNew)
       state.articles.splice(index, 1, articleNew)
     },
     deleteArticle: (state, action) => {

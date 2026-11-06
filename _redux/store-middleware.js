@@ -1,3 +1,16 @@
+import { saveCache } from '../F1LS/F1LSArticles.js';
+
+export const persistenceMiddleware = store => next => action => {
+  const result = next(action)
+  if (action.type.startsWith('articles/')) {
+    const state = store.getState()
+    saveCache(state.Articles)   
+    // console.logD('localStorage udpated')
+    // console.log(state.Articles);
+  }
+  return result
+}
+
 export const logger = store => next => action => {
   return next(action)
 }
