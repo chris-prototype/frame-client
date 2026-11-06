@@ -6,7 +6,6 @@ import Submit from './Z1Submit.js'
 import makeObject from './M1FormHelper.js'
 import { clearArticleForm } from '../_redux/a-article-form'
 import { toggleModalOff } from '../_redux/f-modal'
-import { LSaddArticle } from '../F1LS/F1LSArticles.js'
 
 export default function M1Form () {
   const dispatch = useDispatch()
@@ -29,7 +28,6 @@ export default function M1Form () {
     // create article
     } else {
       Submit.post(payload, dispatch)
-      LSaddArticle(payload)
     }
     alert('Action completed.  Thank you.')
   }

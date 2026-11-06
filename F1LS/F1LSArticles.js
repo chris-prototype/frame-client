@@ -17,7 +17,7 @@ export function saveArticles (articles) {
   LS.set(ARTICLES_KEY, payload)
 }
 
-/* CRUD OPERATIONS
+/* CRUD OPERATIONS - moved to redux for simplicity, redux synchs to localStorage
 */
 export function LSdeleteArticle (articleId) {
   const cached = LS.get(ARTICLES_KEY) || { articles: [] }
@@ -38,7 +38,7 @@ export function LSaddArticle (newArticle) {
   LS.set(ARTICLES_KEY, payload)
 }
 
-export function updateArticle (updatedArticle) {
+export function LSupdateArticle (updatedArticle) {
   const cached = LS.get(ARTICLES_KEY) || { articles: [] }
   const updatedArticles = cached.articles.map(article =>
     article.id === updatedArticle.id ? { ...article, ...updatedArticle } : article
